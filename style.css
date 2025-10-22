@@ -45,6 +45,7 @@ body {
 
 .profileText .imgBx {
     position: relative;
+    width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
@@ -81,18 +82,6 @@ body {
     padding-top: 40px;
 }
 
-.contactInfo.language h4{
-    color: #fff;
-    font-weight: 300;
-}
-.contactInfo.language h4 span{
-    font-weight: 500;
-}
-
-.contactInfo .language- {
-    padding-bottom: 10px;
-}
-
 .title {
     color: #fff;
     text-transform: uppercase;
@@ -103,7 +92,8 @@ body {
 
 .contactInfo ul {
     position: relative;
-    padding-bottom: 10px;
+    /* padding: 10px; */
+
 }
 .contactInfo ul li {
     list-style: none;
@@ -116,10 +106,6 @@ body {
 }
 
 .contactInfo ul li a:visited {
-    text-decoration: none;
-    color: #fff;
-}
-.contactInfo ul li a:link {
     text-decoration: none;
     color: #fff;
 }
@@ -193,12 +179,6 @@ body {
     padding: 30px;
 }
 
-.about.skills .box{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 .about {
     margin-bottom: 50px;
 }
@@ -220,7 +200,7 @@ p {
 
 /* .about .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 20px 0;
 } */
 
@@ -267,45 +247,10 @@ p {
 
 }
 
-.about.project .box{
-    padding-bottom: 20px;
-}
-
-.about.project .box.end{
-    padding-bottom: 0;
-}
-
-.about.project .box .text .tech{
-    font-size: 14px;
-    padding: 5px 0 5px 0 ;
-}
-
 .about .box .text h4 {
     text-transform: uppercase;
     color: #2a7da2;
     font-size: 16px;
-}
-
-.about.project .box .text h4 span{
-    font-weight: 500;
-}
-
-.about.project .box .text h4 a:visited {
-    text-decoration: none;
-    color: #2a7da2;
-}
-.about.project .box .text h4 a:link {
-    text-decoration: none;
-    color: #2a7da2;
-}
-
-.about.project .box .text h4 a:hover {
-    color:#848c90;
-    text-decoration: underline;
-}
-
-.about.project .box .text h4 a {
-    text-decoration: none;
 }
 
 .skills .box {
@@ -340,7 +285,7 @@ p {
     background: #03a9f4;
 }
 
-/* .interest ul {
+.interest ul {
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
@@ -358,10 +303,6 @@ p {
     font-size: 18px;
     margin-right: 8px;
     
-} */
-
-.interest .box {
-    display: f;
 }
 
 .about .box.language .text {
@@ -374,12 +315,12 @@ p {
         margin: 10px;
         grid-template-columns: repeat(1,1fr);
     }
-    /* .interest ul {
+    .interest ul {
         grid-template-columns: repeat(2,1fr);
-    } */
+    }
 }
 
-/* @media (max-width: 1000px){
+@media (max-width: 1000px){
     .about .box{
     flex-direction: column;
     }
@@ -387,10 +328,10 @@ p {
         min-width: 150px;
         margin-bottom: 5px;
     }
-    /* .interest ul {
+    .interest ul {
         grid-template-columns: repeat(1,1fr);
-    } 
+    }
     .skills .box {
         grid-template-columns: repeat(1,1fr);
     }
-} */
+}
